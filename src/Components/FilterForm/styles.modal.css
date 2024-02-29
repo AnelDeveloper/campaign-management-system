@@ -1,0 +1,51 @@
+.filter-form {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto 30px; 
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    background-color: #f8f9fa;
+    min-width: 560px;
+}
+
+.filter-form input[type="text"],
+.filter-form input[type="date"],
+.filter-form select {
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-right: 10px; 
+    font-size: 16px; 
+    color: #495057;
+    background-color: #ffffff;
+}
+
+.filter-form input[type="text"]:focus,
+.filter-form input[type="date"]:focus,
+.filter-form select:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.filter-form input[type="text"]::placeholder {
+    color: #6c757d;
+}
+
+.filter-form select {
+    cursor: pointer;
+    min-width: 50px
+}
+
+
+.filter-form input:last-child,
+.filter-form select:last-child {
+    margin-right: 0;
+}
+
+
+.filter-form-container{
+    display: flex;
+    flex-direction: row;
+}

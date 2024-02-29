@@ -1,0 +1,239 @@
+.campaign-table {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    width: 70%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden; 
+    border: 2px solid #007bff; 
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.editButton:hover {
+    background-color: #f4de38;
+}
+
+.statusButton:hover {
+    background-color: #ff1b1b;
+}
+
+thead {
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+th, td {
+    
+    text-align: left;
+    padding: 10px 13px;
+    border-bottom: 1px solid #dee2e6; 
+    border-left: 1px solid #dee2e6; 
+}
+td {
+    padding-top: 10px;
+    text-align: center; 
+}
+th:first-child, td:first-child {
+    border-left: none; 
+}
+
+thead th {
+    border-bottom: 2px solid #8e8e8e; 
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}
+
+.actionButton, .editButton, .statusButton {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.actionButton.edit, .editButton {
+    background-color: #ffc107;
+}
+
+.actionButton.delete, .statusButton {
+    background-color: #dc3545;
+}
+
+.actionButton:hover, .editButton:hover, .statusButton:hover {
+    opacity: 0.8;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    padding: 10px 13px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+    font-size: 0.875rem;
+    margin: 0 2px;
+}
+
+.statusIcon {
+    margin-right: 5px;
+}
+
+.statusActive {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.statusActive .statusIcon {
+    color: #fff;
+}
+
+.statusActive:hover {
+    background-color: #45a049;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.statusInactive {
+    background-color: #f44336;
+    color: white;
+}
+
+.statusInactive .statusIcon {
+    color: #fff;
+}
+
+.statusInactive:hover {
+    background-color: #e53935;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.campaignHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.campaignHeaderh2 {
+    margin-bottom: 55px;
+}
+.tooltipContainer {
+    position: relative;
+    display: inline-block; 
+}
+
+.customTooltip {
+    visibility: hidden;
+    width: 160px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px; 
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.statusButton:hover .customTooltip {
+    visibility: visible;
+    opacity: 1;
+}
+.editButton:hover .customTooltip {
+    visibility: visible;
+    opacity: 1;
+}
+.addCampaignButton:hover .customTooltip {
+    visibility: visible;
+    opacity: 1;
+    width: 140px;
+    top: 110%;
+    bottom: auto;
+    margin-left: -100px; 
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+.pagination button, .pagination select {
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+}
+
+.pagination select {
+    cursor: pointer;
+}
+
+.pagination span {
+    color: #333;
+    margin: 0 10px;
+}
+
+.pagination select {
+    background-color: white;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.pagination button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
